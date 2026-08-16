@@ -5,7 +5,7 @@ const PanelLeft: React.FC = () =>{
         id="panel-left"
         className="snap-start min-h-[100dvh] xl:h-auto xl:min-h-screen p-10 pt-45 flex justify-center items-center overflow-hidden flex-col relative"
       >
-        <div id="auth-visual" className="w-[50%] sm:w-full max-w-[250px] aspect-[250/326] mb-10 relative shadow-2xl rounded-3xl pointer-events-none">
+        <div id="auth-visual" className="w-[50%] sm:w-full max-w-[250px] aspect-[250/326] mb-10 relative shadow-2xl shadow-[#6d5efc]/50 rounded-3xl pointer-events-none">
           <div id="auth-photo-wrap" className="rounded-3xl p-1 bg-white border border border-white inset-0 absolute">
             <img
               src="https://www.jswkol.com/influ.jpg"
