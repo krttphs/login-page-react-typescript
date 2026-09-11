@@ -7,7 +7,7 @@ const PanelRight: React.FC = () => {
    const [isLogin,setIsLogin] = useState<boolean>(true)
    const [THLang, setTHLang] = useState<boolean>(true);
     return(
-        <section id="panel-right" className={`${THLang ? "thai-sarabun" : ""} snap-start min-h-[100dvh] xl:h-auto xl:min-h-screen p-3 lg:p-10 pb-24 flex justify-center items-center flex-col bg-gradient-to-t from-[#eee9ff] to-[#eee9ff] relative`}>
+        <section id="panel-right" className={`${THLang ? "thai-sarabun" : ""} snap-start min-h-[100dvh] xl:h-auto xl:min-h-screen p-3 lg:p-10 pb-12 flex justify-center items-center flex-col bg-gradient-to-t from-[#eee9ff] to-[#eee9ff] relative`}>
             <div className={`flex absolute flex-row absolute top-4 right-6 bg-gray-200 rounded-lg p-1 thai-sarabun ${isLogin ? "" : "hidden"}`} style={{fontSize:13}}>
         <h1 onClick={() => setTHLang(false)} className={`flex flex-1 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out ${!THLang ? "text-[#6d5efc] bg-white" : "text-black/40 hover:text-black/70"}`}>EN</h1>
         <h1 onClick={() => setTHLang(true)} className={`flex flex-1 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out ${THLang ? "text-[#6d5efc] bg-white" : "text-black/40 hover:text-black/70"}`}>ไทย</h1>
